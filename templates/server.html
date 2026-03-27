@@ -1,0 +1,96 @@
+<!-- 筛选条件区域 -->
+<div class="card mb-3">
+  <div class="card-body">
+    <form id="searchForm" class="row g-3">
+
+      <!-- 第一行 -->
+      <div class="col-md-4">
+        <div class="row align-items-center g-2">
+          <label for="ip" class="col-sm-3 col-form-label mb-0 text-end">服务器IP</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control form-control-sm" id="ip" name="ip" placeholder="请输入IP">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="row align-items-center g-2">
+          <label for="project" class="col-sm-3 col-form-label mb-0 text-end">项目名称</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control form-control-sm" id="project" name="project" placeholder="请输入项目名称">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="row align-items-center g-2">
+          <label for="status" class="col-sm-3 col-form-label mb-0 text-end">状态</label>
+          <div class="col-sm-9">
+            <select class="form-select form-select-sm" id="status" name="status">
+              <option value="">全部</option>
+              <option value="online">在线</option>
+              <option value="offline">离线</option>
+              <option value="maintain">维护中</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二行：时间 -->
+      <div class="col-md-4">
+        <div class="row align-items-center g-2">
+          <label for="start_time" class="col-sm-3 col-form-label mb-0 text-end">开始时间</label>
+          <div class="col-sm-9">
+            <input type="date" class="form-control form-control-sm" id="start_time" name="start_time">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="row align-items-center g-2">
+          <label for="end_time" class="col-sm-3 col-form-label mb-0 text-end">结束时间</label>
+          <div class="col-sm-9">
+            <input type="date" class="form-control form-control-sm" id="end_time" name="end_time">
+          </div>
+        </div>
+      </div>
+
+      <!-- 第三行：按钮 → 关键对齐！-->
+      <div class="col-md-4">
+        <div class="row g-2">
+          <div class="col-sm-3"></div>  <!-- 占label的位置 -->
+          <div class="col-sm-9 d-flex gap-2">
+            <button type="submit" class="btn btn-primary btn-sm w-100">查询</button>
+            <button type="reset" class="btn btn-outline-secondary btn-sm w-100">清空</button>
+          </div>
+        </div>
+      </div>
+    
+
+    </form>
+  </div>
+</div>
+
+<!-- 下面放你的数据列表 -->
+<div class="card">
+  <div class="card-body">
+    <table class="table table-hover table-bordered mb-0">
+      <thead>
+        <tr>
+          <th>服务器IP</th>
+          <th>项目名称</th>
+          <th>状态</th>
+          <th>时间</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>192.168.1.10</td>
+          <td>测试项目</td>
+          <td>在线</td>
+          <td>2026-03-27</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

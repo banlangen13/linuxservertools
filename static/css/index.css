@@ -1,0 +1,40 @@
+/* 自定义样式 */
+body {
+    font-size: 0.92rem;
+    background-color: #f5f7fa;
+}
+.sidebar {
+    min-height: 100vh;
+    background: #212529;
+    width: 220px;
+}
+.sidebar a {
+    color: #ccc;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.sidebar a:hover {
+    background: #343a40;
+    color: white;
+}
+.sidebar a.active {
+    background: #0d6efd;
+    color: white;
+}
+.top-navbar {
+    background: #0d6efd;
+}
+.content-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
